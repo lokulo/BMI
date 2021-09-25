@@ -2,8 +2,8 @@
 //JS PPT: https://drive.google.com/open?id=0BwN5VWV_C7-5ZnE3d045YWZJb00
 //Javascript 變數的使用
 
-var weight=50.5;
-var height=160;
+var weight=54;
+var height=179;
 var bmi = weight/((height/100)**2);
 
 console.log("Hello! Your BMI value is "+ bmi);
@@ -15,8 +15,22 @@ console.log("Hello! Your BMI value is "+ bmi);
 
 const readline = require('readline-sync');
 weight = readline.question('請輸入您的體重(kg)?');
-height = readline.question('請輸入您的身高(cm)?');  
+height = readline.question('請輸入您的身高(cm)?');
+var bmi = weight/((height/100)**2); 
 
+console.log("Hello! Your BMI value is "+ bmi); 
+
+if (weight < 50 ){
+    console.log("Your input is out of range, please try again"); 
+}else if (weight > 220){
+    console.log("Your input is out of range, please try again");
+}else if (height < 10 ){
+    console.log("Your input is out of range, please try again");
+}else if (height > 200){
+    console.log("Your input is out of range, please try again");   
+}else {
+    console.log("Your input is right range");
+}
 
 //not only bmi value, but also judgement
 //Ask user to input height only, is it workable?
