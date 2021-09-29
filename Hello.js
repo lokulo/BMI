@@ -20,13 +20,13 @@ var bmi = weight/((height/100)**2);
 
 console.log("Hello! Your BMI value is "+ bmi); 
 
-if (weight < 50 ){
+if (weight < 10 ){
     console.log("Your input is out of range, please try again"); 
-}else if (weight > 220){
+}else if (weight > 200){
     console.log("Your input is out of range, please try again");
-}else if (height < 10 ){
+}else if (height < 50 ){
     console.log("Your input is out of range, please try again");
-}else if (height > 200){
+}else if (height > 220){
     console.log("Your input is out of range, please try again");   
 }else {
     console.log("Your input is right range");
