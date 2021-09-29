@@ -18,7 +18,7 @@ weight = readline.question('請輸入您的體重(kg)?');
 height = readline.question('請輸入您的身高(cm)?');
 var bmi = weight/((height/100)**2); 
 
-console.log("Hello! Your BMI value is "+ bmi); 
+ 
 
 if (weight < 10 ){
     console.log("Your input is out of range, please try again"); 
@@ -30,6 +30,7 @@ if (weight < 10 ){
     console.log("Your input is out of range, please try again");   
 }else {
     console.log("Your input is in range");
+    console.log("Hello! Your BMI value is "+ bmi);
 }
 
 //not only bmi value, but also judgement
