@@ -29,7 +29,7 @@ if (weight < 10 ){
 }else if (height > 220){
     console.log("Your input is out of range, please try again");   
 }else {
-    console.log("Your input is right range");
+    console.log("Your input is in range");
 }
 
 //not only bmi value, but also judgement
